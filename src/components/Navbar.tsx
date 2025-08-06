@@ -71,7 +71,9 @@ export const Navbar = () => {
               href={item.href}
               className={`uppercase tracking-wider text-sm font-medium transition-all duration-300 ${
                 isHomePage 
-                  ? "text-white hover:text-gray-200" 
+                  ? scrolled 
+                    ? "text-black hover:text-gray-700"
+                    : "text-white hover:text-gray-200"
                   : "text-black hover:text-gray-700"
               }`}
             >
@@ -87,19 +89,35 @@ export const Navbar = () => {
               href={getLanguageSwitchUrl("en")}
               className={`px-2 py-1 text-xs uppercase transition-all duration-300 ${
                 currentLocale === "en"
-                  ? isHomePage ? "text-white font-bold" : "text-black font-bold"
-                  : isHomePage ? "text-gray-300 hover:text-white" : "text-gray-500 hover:text-black"
+                  ? isHomePage 
+                    ? scrolled 
+                      ? "text-black font-bold" 
+                      : "text-white font-bold"
+                    : "text-black font-bold"
+                  : isHomePage 
+                    ? scrolled 
+                      ? "text-gray-500 hover:text-black" 
+                      : "text-gray-300 hover:text-white"
+                    : "text-gray-500 hover:text-black"
               }`}
             >
               EN
             </Link>
-            <span className={isHomePage ? "text-gray-400" : "text-gray-300"}>|</span>
+            <span className={isHomePage ? scrolled ? "text-gray-300" : "text-gray-400" : "text-gray-300"}>|</span>
             <Link
               href={getLanguageSwitchUrl("vi")}
               className={`px-2 py-1 text-xs uppercase transition-all duration-300 ${
                 currentLocale === "vi"
-                  ? isHomePage ? "text-white font-bold" : "text-black font-bold"
-                  : isHomePage ? "text-gray-300 hover:text-white" : "text-gray-500 hover:text-black"
+                  ? isHomePage 
+                    ? scrolled 
+                      ? "text-black font-bold" 
+                      : "text-white font-bold"
+                    : "text-black font-bold"
+                  : isHomePage 
+                    ? scrolled 
+                      ? "text-gray-500 hover:text-black" 
+                      : "text-gray-300 hover:text-white"
+                    : "text-gray-500 hover:text-black"
               }`}
             >
               VI
