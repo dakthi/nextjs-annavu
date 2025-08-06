@@ -1,20 +1,20 @@
 export const siteConfig = {
-  name: "Thi Nguyen",
-  title: "Thi Nguyen - Full-stack SME Specialist",
-  description: "Full-stack SME specialist - automating the boring bits and building solutions that actually work",
-  url: "https://thielts.com",
+  name: "Anna Vu",
+  title: "Anna Vu - Travel Consultant & Cultural Explorer",
+  description: "Travel consultant specializing in European adventures and cultural exploration. Helping you discover the world with freedom and curiosity.",
+  url: "https://annavu.com",
   author: {
-    name: "Thi Nguyen",
-    email: "dakthi9@gmail.com",
+    name: "Anna Vu",
+    email: "hello@annavu.com",
     location: "London, UK",
-    tagline: "but it's pronounced Tea",
-    jobTitle: "Full-stack SME Specialist & Automation Consultant",
+    tagline: "Exploring Europe one adventure at a time",
+    jobTitle: "Travel Consultant & Cultural Explorer",
     social: {
-      linkedin: "https://www.linkedin.com/in/dakthi/",
-      facebook: "https://www.facebook.com/nganhthi247/",
+      linkedin: "https://www.linkedin.com/in/anna-vu-travel/",
+      facebook: "https://www.facebook.com/annavutravels/",
     },
   },
   company: {
-    description: "Thi Nguyen offers a wide range of marketing, automation consultancy for small, medium enterprises",
+    description: "Anna Vu offers personalized travel consulting services, specializing in European adventures and cultural exploration experiences",
   },
 } as const;

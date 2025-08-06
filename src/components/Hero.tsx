@@ -7,28 +7,28 @@ interface HeroProps {
 export const Hero = ({ locale = "en" }: HeroProps) => {
   const content = {
     en: {
-      title: "the gal who wears many hats",
+      title: "your travel companion to europe",
       paragraph1:
-        "most accountants account. i account - but i also automate 80% of it, standardise the workflow, create training videos for onboarding, and then use that to close clients (then proceed to close the client too)",
+        "I'm Anna, living in London and passionate about exploring Europe. Every month or two, I discover new countries, cultures, and experiences. Travel isn't just about reaching destinations – it's about freedom, curiosity, and sharing those amazing discoveries with others.",
       paragraph2: {
-        line1: "most teachers teach. i do more.",
-        line2: "most marketers run ads. i do more.",
-        line3: "whatever you need. i do more",
+        line1: "From the modern marvels of South Korea to the hidden gems of Europe,",
+        line2: "I help others experience that same sense of freedom and wonder.",
+        line3: "Let me guide your next adventure.",
       },
-      cta: "find out if i'm real",
-      ctaHref: "/blog",
+      cta: "start your journey",
+      ctaHref: "/contact",
     },
     vi: {
-      title: "<b>thi</b> làm đủ thứ",
+      title: "người bạn đồng hành châu âu của bạn",
       paragraph1:
-        "kế toán thì chỉ làm kế toán. <b>thi</b> cũng làm kế toán, nhưng mà nó khác – <b>thi</b> tự động hoá 80% công việc, chuẩn hoá quy trình, làm video đào tạo rồi dùng chính hệ thống đó để thu hút khách hàng.",
+        "Tôi là Anna, đang sống ở London và đam mê khám phá châu Âu. Mỗi tháng hoặc hai tháng, tôi khám phá những đất nước, văn hóa và trải nghiệm mới. Du lịch không chỉ là đến đích – mà là về sự tự do, tò mò và chia sẻ những khám phá tuyệt vời với người khác.",
       paragraph2: {
-        line1: "<b>thi</b> cũng dạy, nhưng mà nó khác.",
-        line2: "<b>thi</b> cũng làm marketing, nhưng mà nó khác.",
-        line3: "nói chung là cần gì, <b>thi</b> cũng làm, nhưng mà nó khác.",
+        line1: "Từ những kỳ quan hiện đại của Hàn Quốc đến những viên ngọc ẩn của châu Âu,",
+        line2: "tôi giúp mọi người trải nghiệm cảm giác tự do và ngạc nhiên tương tự.",
+        line3: "Hãy để tôi hướng dẫn cuộc phiêu lưu tiếp theo của bạn.",
       },
-      cta: "vậy thi làm gì thế?",
-      ctaHref: "/blog",
+      cta: "bắt đầu hành trình",
+      ctaHref: "/contact",
     },
   };
 

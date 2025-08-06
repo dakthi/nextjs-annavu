@@ -21,25 +21,25 @@ export const Navbar = () => {
   const translations = {
     en: {
       nav: [
-        { label: "Tax Articles", href: "blog" },
-        { label: "Services", href: "projects" },
-        { label: "About", href: "learn" },
+        { label: "Travel Blog", href: "blog" },
+        { label: "Travel Services", href: "projects" },
+        { label: "About Anna", href: "learn" },
         { label: "Testimonials", href: "testimonials" },
         { label: "FAQ", href: "faq" },
       ],
-      contact: "Contact Lieu",
+      contact: "Plan My Journey",
       lightMode: "light mode",
       darkMode: "dark mode",
     },
     vi: {
       nav: [
-        { label: "Bài viết về thuế", href: "blog" },
-        { label: "Dịch vụ", href: "projects" },
-        { label: "Giới thiệu", href: "learn" },
+        { label: "Blog Du lịch", href: "blog" },
+        { label: "Dịch vụ Du lịch", href: "projects" },
+        { label: "Về Anna", href: "learn" },
         { label: "Đánh giá", href: "testimonials" },
         { label: "Câu hỏi thường gặp", href: "faq" },
       ],
-      contact: "Liên hệ Liệu",
+      contact: "Lên kế hoạch hành trình",
       lightMode: "chế độ sáng",
       darkMode: "chế độ tối",
     },
@@ -81,8 +81,8 @@ export const Navbar = () => {
               className="flex items-center space-x-3"
             >
               <img
-                src="/img/lieu-1.jpg"
-                alt="Lieu Vo"
+                src="/img/anna-profile.jpg"
+                alt="Anna Vu"
                 className={`rounded-full transition-all duration-300 ${
                   scrolled ? "w-10 h-10" : "w-12 h-12"
                 }`}
@@ -93,14 +93,14 @@ export const Navbar = () => {
                     scrolled ? "text-xl" : "text-2xl"
                   }`}
                 >
-                  Lieu Vo
+                  Anna Vu
                 </span>
                 <span
                   className={`text-gray-600 dark:text-gray-300 font-light transition-all duration-300 ${
                     scrolled ? "text-xs hidden sm:inline" : "text-sm"
                   }`}
                 >
-                  UK Tax Expert & Accountant
+                  European Travel Consultant
                 </span>
               </div>
             </Link>

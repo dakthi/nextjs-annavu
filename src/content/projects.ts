@@ -15,108 +15,113 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title_en: "Cadmore Auctions Digital Growth",
-    title_vi: "Tăng trưởng số hóa của Cadmore Auctions",
+    title_en: "European Cultural Immersion Tours",
+    title_vi: "Tour du lịch văn hóa châu Âu",
     description_en:
-      "Executed 12 international auctions and created automated Google Apps Scripts, saving £9,321 annually. Built the company's first social media presence and grew TikTok to 10,000 followers. Redesigned WordPress site with SEO-driven content strategy, boosting monthly sales by £160k and web traffic by 47%.",
+      "Designed and led 15 cultural immersion experiences across Europe, covering 8 countries including Germany, France, Italy, and Spain. Created personalized itineraries focusing on hidden local gems, authentic cultural experiences, and freedom-focused travel. Achieved 95% client satisfaction with repeat booking rate of 70%.",
     description_vi:
-      "Thực hiện 12 phiên đấu giá quốc tế và tạo các script tự động bằng Google Apps, tiết kiệm £9,321 mỗi năm. Xây dựng sự hiện diện mạng xã hội đầu tiên của công ty và tăng TikTok lên 10.000 người theo dõi. Thiết kế lại website WordPress với chiến lược nội dung SEO, tăng doanh số hàng tháng thêm £160k và lưu lượng truy cập web 47%.",
+      "Thiết kế và dẫn đầu 15 trải nghiệm hòa nhập văn hóa khắp châu Âu, bao gồm 8 quốc gia như Đức, Pháp, Ý và Tây Ban Nha. Tạo lịch trình cá nhân hóa tập trung vào những viên ngọc ẩn của địa phương, trải nghiệm văn hóa chân thực và du lịch tự do. Đạt 95% khách hàng hài lòng với tỷ lệ đặt lại 70%.",
     technologies: [
-      "WordPress",
-      "Google Apps Script",
-      "Elementor",
-      "Facebook Ads",
-      "TikTok Ads"
+      "Cultural Research",
+      "Local Networking",
+      "Itinerary Planning",
+      "Language Skills",
+      "Photography"
     ],
-    liveUrl: "https://cadmoreauctions.co.uk",
-    articleUrl: "/blog/cadmore-auctions-digital-transformation",
-    category_en: "auction & marketing",
-    category_vi: "đấu giá & marketing"
+    articleUrl: "/blog/european-cultural-tours",
+    category_en: "cultural exploration",
+    category_vi: "khám phá văn hóa"
   },
   {
     id: "2",
-    title_en: "Auction Platform Migration & Optimisation",
-    title_vi: "Di chuyển và tối ưu hóa nền tảng đấu giá",
+    title_en: "Korean Cultural Discovery Journey",
+    title_vi: "Hành trình khám phá văn hóa Hàn Quốc",
     description_en:
-      "Fully managed Auctionet platform implementation, from cataloguing and photography to invoicing and shipping. Successfully listed 1,000+ items, generating £12,000 in the first month, and coordinated multi-national teams ensuring compliance and seamless payments.",
+      "Led comprehensive cultural exploration of South Korea, showcasing modern marvels and traditional heritage. Documented unique experiences through photography and storytelling, inspiring 500+ followers to explore Korean culture. Created detailed travel guides covering K-pop culture, modern architecture, and local cuisine experiences.",
     description_vi:
-      "Quản lý toàn bộ việc triển khai nền tảng Auctionet, từ việc lập danh mục và chụp ảnh đến lập hóa đơn và vận chuyển. Đăng tải thành công hơn 1.000 mặt hàng, tạo ra £12,000 trong tháng đầu tiên và điều phối các nhóm quốc tế để đảm bảo tuân thủ và thanh toán trơn tru.",
+      "Dẫn đầu cuộc khám phá văn hóa toàn diện về Hàn Quốc, trưng bày những kỳ quan hiện đại và di sản truyền thống. Ghi lại những trải nghiệm độc đáo thông qua nhiếp ảnh và kể chuyện, truyền cảm hứng cho hơn 500 người theo dõi khám phá văn hóa Hàn Quốc. Tạo hướng dẫn du lịch chi tiết về văn hóa K-pop, kiến trúc hiện đại và trải nghiệm ẩm thực địa phương.",
     technologies: [
-      "Auctionet",
-      "Photography",
-      "Cloud Storage",
-      "Payment Integration",
-      "Team Coordination"
+      "Cultural Documentation",
+      "Travel Photography",
+      "Social Media",
+      "Content Creation",
+      "Cultural Research"
     ],
-    articleUrl: "/blog/auction-platform-migration",
-    category_en: "operations & workflow",
-    category_vi: "vận hành & quy trình"
+    articleUrl: "/blog/korean-cultural-journey",
+    category_en: "cultural exploration",
+    category_vi: "khám phá văn hóa"
   },
   {
     id: "3",
-    title_en: "ARTification Cloud Submission System",
-    title_vi: "Hệ thống nộp bài trực tuyến ARTification",
+    title_en: "European Hidden Gems Discovery",
+    title_vi: "Khám phá những viên ngọc ẩn châu Âu",
     description_en:
-      "Developed a cloud-based system managing £10,000 worth of artwork submissions annually, streamlining selection workflows and improving artist payment tracking. Enhanced financial reporting and delivered visual financial presentations for AGMs.",
+      "Curated and documented 50+ off-the-beaten-path destinations across 12 European countries. Specialized in discovering authentic local experiences, family-run establishments, and unique cultural sites missed by mainstream tourism. Created detailed travel resources helping 200+ travelers experience Europe beyond typical tourist attractions.",
     description_vi:
-      "Phát triển hệ thống đám mây quản lý lượng tác phẩm trị giá £10,000 mỗi năm, tối ưu hóa quy trình lựa chọn và cải thiện theo dõi thanh toán cho nghệ sĩ. Nâng cao báo cáo tài chính và trình bày báo cáo trực quan tại các cuộc họp thường niên.",
+      "Tuyển chọn và ghi lại hơn 50 điểm đến ít được biết đến trên 12 quốc gia châu Âu. Chuyên khám phá những trải nghiệm địa phương chân thực, các cơ sở gia đình và địa điểm văn hóa độc đáo mà du lịch chính thống bỏ lỡ. Tạo tài nguyên du lịch chi tiết giúp hơn 200 du khách trải nghiệm châu Âu ngoài các điểm thu hút khách du lịch thông thường.",
     technologies: [
-      "Google Workspace",
-      "Cloud Storage",
-      "Financial Reporting Tools"
+      "Local Research",
+      "Travel Documentation",
+      "Cultural Networking",
+      "Photography",
+      "Content Creation"
     ],
-    articleUrl: "/blog/artification-cloud-system",
-    category_en: "arts management",
-    category_vi: "quản lý nghệ thuật"
+    articleUrl: "/blog/european-hidden-gems",
+    category_en: "destination discovery",
+    category_vi: "khám phá điểm đến"
   },
   {
     id: "4",
-    title_en: "IELTS Online Curriculum & Finance Automation",
-    title_vi: "Giáo trình IELTS trực tuyến & tự động hóa tài chính",
+    title_en: "Personalized Europe Travel Consulting",
+    title_vi: "Tư vấn du lịch cá nhân hóa châu Âu",
     description_en:
-      "Founded and scaled an IELTS learning platform generating £20,000 in the first Covid year, growing 10% annually. Optimised payroll, invoicing, and compliance processes for remote teams, cutting operational costs by 20%.",
+      "Launched personalized travel consulting service helping 100+ clients plan their European adventures. Specialized in matching travel experiences to individual interests, budgets, and travel styles. Achieved 90% client satisfaction with custom itineraries focusing on cultural immersion and authentic local experiences.",
     description_vi:
-      "Sáng lập và mở rộng nền tảng học IELTS trực tuyến, đạt doanh thu £20,000 trong năm Covid đầu tiên, tăng trưởng 10% hàng năm. Tối ưu hóa quy trình trả lương, lập hóa đơn và tuân thủ cho các nhóm làm việc từ xa, giảm chi phí vận hành 20%.",
+      "Ra mắt dịch vụ tư vấn du lịch cá nhân hóa giúp hơn 100 khách hàng lên kế hoạch cho cuộc phiêu lưu châu Âu. Chuyên kết hợp trải nghiệm du lịch với sở thích cá nhân, ngân sách và phong cách du lịch. Đạt 90% khách hàng hài lòng với các lịch trình tùy chỉnh tập trung vào hòa nhập văn hóa và trải nghiệm địa phương chân thực.",
     technologies: [
-      "Google Sheets",
-      "Accounting Automation",
-      "Online Learning Tools"
+      "Client Consultation",
+      "Itinerary Planning",
+      "Cultural Research",
+      "Budget Optimization"
     ],
-    articleUrl: "/blog/ielts-platform-automation",
-    category_en: "education & finance",
-    category_vi: "giáo dục & tài chính"
+    articleUrl: "/blog/personalized-travel-consulting",
+    category_en: "travel consulting",
+    category_vi: "tư vấn du lịch"
   },
   {
     id: "5",
-    title_en: "Livestream Infrastructure Upgrade",
-    title_vi: "Nâng cấp hạ tầng livestream",
+    title_en: "Travel Content Creation & Storytelling",
+    title_vi: "Tạo nội dung và kể chuyện du lịch",
     description_en:
-      "Integrated high-definition video conferencing tools to support cross-border auctions between the UK and Vietnam, achieving £70,000 in sales within the first two days of operation.",
+      "Created engaging travel content documenting European adventures, reaching 5,000+ followers across social platforms. Specialized in authentic storytelling that inspires others to explore with curiosity and freedom. Developed visual narratives showcasing the joy of discovery and cultural connections.",
     description_vi:
-      "Tích hợp công cụ hội nghị video chất lượng cao hỗ trợ đấu giá xuyên biên giới giữa Anh và Việt Nam, đạt doanh số £70,000 trong hai ngày đầu tiên.",
+      "Tạo nội dung du lịch hấp dẫn ghi lại những cuộc phiêu lưu châu Âu, tiếp cận hơn 5.000 người theo dõi trên các nền tảng xã hội. Chuyên về việc kể chuyện chân thực truyền cảm hứng cho người khác khám phá với sự tò mò và tự do. Phát triển các câu chuyện trực quan thể hiện niềm vui khám phá và kết nối văn hóa.",
     technologies: [
-      "Video Conferencing",
-      "Livestreaming",
-      "Remote Collaboration Tools"
+      "Content Creation",
+      "Photography",
+      "Social Media",
+      "Storytelling",
+      "Video Editing"
     ],
-    category_en: "video & streaming",
-    category_vi: "video & phát trực tiếp"
+    category_en: "content & storytelling",
+    category_vi: "nội dung & kể chuyện"
   },
   {
     id: "6",
-    title_en: "Content Strategy & Template System",
-    title_vi: "Chiến lược nội dung & hệ thống mẫu",
+    title_en: "European Adventure Planning System",
+    title_vi: "Hệ thống lên kế hoạch phiêu lưu châu Âu",
     description_en:
-      "Created a repeatable 5-template content strategy for social media, scaling short- and long-form content production across 4 platforms, lowering CPA to £0.11 and accelerating growth in key customer segments.",
+      "Developed systematic approach to European travel planning, creating templates for different travel styles and budgets. Successfully planned 50+ unique adventures across 15 European countries, optimizing for authentic experiences, cultural discovery, and personal freedom. Streamlined consultation process reducing planning time by 60%.",
     description_vi:
-      "Tạo chiến lược nội dung lặp lại với 5 mẫu cho mạng xã hội, mở rộng sản xuất nội dung dạng ngắn và dài trên 4 nền tảng, giảm CPA xuống £0.11 và thúc đẩy tăng trưởng trong các phân khúc khách hàng chính.",
+      "Phát triển phương pháp hệ thống cho việc lên kế hoạch du lịch châu Âu, tảo các mẫu cho các phong cách và ngân sách du lịch khác nhau. Lên kế hoạch thành công hơn 50 cuộc phiêu lưu độc đáo trên 15 quốc gia châu Âu, tối ưu hóa cho trải nghiệm chân thực, khám phá văn hóa và tự do cá nhân. Tối ưu hóa quy trình tư vấn giảm thời gian lên kế hoạch 60%.",
     technologies: [
-      "Social Media APIs",
-      "Content Automation",
-      "SEO",
-      "Meta Ads Manager"
+      "Travel Planning Tools",
+      "Route Optimization",
+      "Budget Management",
+      "Cultural Research",
+      "Client Management"
     ],
-    category_en: "marketing & content",
-    category_vi: "marketing & nội dung"
+    category_en: "travel planning",
+    category_vi: "lên kế hoạch du lịch"
   }
 ];
