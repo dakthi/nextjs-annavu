@@ -105,7 +105,7 @@ export const Navbar = () => {
             </Link>
           </div>
           
-          <button className="bg-pink-500 text-white px-6 py-2 rounded font-medium hover:bg-pink-600 transition-colors">
+          <button className="bg-green-900 text-white px-6 py-2 rounded font-medium hover:bg-green-600 transition-colors">
             {t.enquire}
           </button>
         </div>

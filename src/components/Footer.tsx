@@ -12,11 +12,11 @@ export function Footer({ locale }: FooterProps) {
   const pathname = usePathname();
   const currentLocale = locale || (pathname?.startsWith("/vi") ? "vi" : "en");
   const navigation = [
-    { label_en: "Travel Blog", label_vi: "Blog Du lịch", href: "/blog" },
-    { label_en: "Travel Services", label_vi: "Dịch vụ Du lịch", href: "/projects" },
-    { label_en: "About Anna", label_vi: "Về Anna", href: "/learn" },
-    { label_en: "Testimonials", label_vi: "Đánh giá", href: "/testimonials" },
-    { label_en: "FAQ", label_vi: "Câu hỏi thường gặp", href: "/faq" },
+    { label_en: "Home", label_vi: "Trang chủ", href: "" },
+    { label_en: "About", label_vi: "Giới thiệu", href: "/learn" },
+    { label_en: "Trips", label_vi: "Chuyến đi", href: "/projects" },
+    { label_en: "Blog", label_vi: "Blog", href: "/blog" },
+    { label_en: "Contact", label_vi: "Liên hệ", href: "/contact" },
   ];
 
   const legal = [
@@ -27,101 +27,145 @@ export function Footer({ locale }: FooterProps) {
 
   const content = {
     en: {
-      tagline: "European Travel Consultant",
-      description: "Anna Vu is a travel consultant based in London, UK. She specializes in European adventures and cultural exploration, helping travelers discover authentic experiences and hidden gems.",
-      keepInTouch: "Connect with Anna",
-      copyright: "Made by Anna Vu"
+      tagline: "Luxury Travel Curator",
+      description: "Creating transformative journeys that blend luxury with authentic cultural experiences. Every trip is designed to open your heart to new cultures and landscapes.",
+      keepInTouch: "Follow Our Adventures",
+      copyright: "Anna Vu Travel",
+      newsletter: "Stay Inspired",
+      newsletterDesc: "Get exclusive travel insights and destination guides delivered to your inbox.",
+      experiences: "Recent Experiences"
     },
     vi: {
-      tagline: "Tư vấn Du lịch Châu Âu",
-      description: "Anna Vu là tư vấn du lịch tại London, UK. Cô chuyên về các cuộc phiêu lưu châu Âu và khám phá văn hóa, giúp du khách khám phá những trải nghiệm chân thực và những viên ngọc ẩn.",
-      keepInTouch: "Kết nối với Anna",
-      copyright: "Được tạo bởi Anna Vu"
+      tagline: "Chuyên gia Du lịch Cao cấp",
+      description: "Tạo ra những hành trình chuyển đổi kết hợp sự sang trọng với trải nghiệm văn hóa chân thực. Mỗi chuyến đi được thiết kế để mở lòng bạn với những nền văn hóa và cảnh quan mới.",
+      keepInTouch: "Theo dõi Cuộc phiêu lưu",
+      copyright: "Anna Vu Travel",
+      newsletter: "Nhận Cảm hứng",
+      newsletterDesc: "Nhận thông tin du lịch độc quyền và hướng dẫn điểm đến gửi đến hộp thư của bạn.",
+      experiences: "Trải nghiệm Gần đây"
     }
   };
 
   const t = content[currentLocale as keyof typeof content] || content.en;
 
+  const recentExperiences = [
+    { image: "/img/chelsea-in-bloom.jpg", title: currentLocale === "en" ? "Chelsea in Bloom" : "Chelsea Xuân" },
+    { image: "/img/in-venice-carnival.jpg", title: currentLocale === "en" ? "Venice Carnival" : "Lễ hội Venice" },
+    { image: "/img/in-budapest.jpg", title: currentLocale === "en" ? "Budapest Nights" : "Đêm Budapest" },
+    { image: "/img/Kandersteg.jpg", title: currentLocale === "en" ? "Swiss Alps" : "Dãy Alps Thụy Sĩ" }
+  ];
+
   return (
-    <div className="w-full bg-white dark:bg-neutral-900 border-t border-gray-100 dark:border-gray-700 mt-5">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
-        <div className="grid grid-cols-1 gap-10 pt-10 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <div className="mb-5">
-              <Link href={`/${currentLocale}`}>
-                <div className="flex items-center space-x-3 mb-2">
-                  <img
-                    src="/img/anna-1.jpg"
-                    alt="Anna Vu"
-                    className="w-12 h-12 rounded-full"
+    <footer className="w-full bg-gray-900 text-white">
+      {/* Recent Experiences Section */}
+      <div className="py-16">
+        <div className="max-w-6xl mx-auto px-8">
+          <h3 className="text-2xl font-serif font-semibold text-center mb-12">
+            {t.experiences}
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {recentExperiences.map((experience, index) => (
+              <div key={index} className="group cursor-pointer">
+                <div className="aspect-square overflow-hidden rounded-lg">
+                  <img 
+                    src={experience.image} 
+                    alt={experience.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <span className="text-xl font-medium text-black dark:text-white">
-                    Anna Vu
-                  </span>
                 </div>
-                <span className="flex items-center space-x-2 text-sm font-light text-gray-600 dark:text-gray-300">
-                  <span>{t.tagline}</span>
-                </span>
-              </Link>
-            </div>
-            <div className="max-w-md text-gray-500 dark:text-gray-400 font-light leading-relaxed">
-              {t.description}
-            </div>
+                <p className="text-sm text-gray-300 mt-2 text-center">{experience.title}</p>
+              </div>
+            ))}
           </div>
-
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href={`/${currentLocale}${item.href}`}
-                  className="w-full px-4 py-2 text-gray-500 dark:text-gray-400 rounded-md hover:text-black dark:hover:text-white focus:text-black dark:focus:text-white transition focus:bg-gray-100 dark:focus:bg-gray-800 focus:outline-none font-light"
-                >
-                  {currentLocale === "en" ? item.label_en : item.label_vi}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
-                <Link
-                  key={index}
-                  href={`/${currentLocale}${item.href}`}
-                  className="w-full px-4 py-2 text-gray-500 dark:text-gray-400 rounded-md hover:text-black dark:hover:text-white focus:text-black dark:focus:text-white transition focus:bg-gray-100 dark:focus:bg-gray-800 focus:outline-none font-light"
-                >
-                  {currentLocale === "en" ? item.label_en : item.label_vi}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className="text-gray-500 dark:text-gray-400 rounded-md font-light">
-              {t.keepInTouch}
-            </div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a href="https://www.facebook.com/yenthuongcat" target="_blank" rel="noopener">
-                <span className="sr-only">Facebook</span>
-                <Facebook />
-              </a>
-              <a href="https://www.instagram.com/annacanary_vu/" target="_blank" rel="noopener">
-                <span className="sr-only">Instagram</span>
-                <Instagram />
-              </a>
-              <a href="https://www.linkedin.com/in/anna-vu-travel" target="_blank" rel="noopener">
-                <span className="sr-only">LinkedIn</span>
-                <Linkedin />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400 font-light">
-          Copyright © {new Date().getFullYear()}.{" "}
-          {t.copyright}
         </div>
       </div>
-    </div>
+
+      {/* Main Footer Content */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-6xl mx-auto px-8 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+            {/* Brand Section */}
+            <div className="lg:col-span-2">
+              <Link href={`/${currentLocale}`} className="block mb-6">
+                <h2 className="text-3xl font-serif font-bold mb-2">Anna Vu</h2>
+                <p className="text-gray-400 text-sm uppercase tracking-wider">{t.tagline}</p>
+              </Link>
+              <p className="text-gray-300 leading-relaxed mb-8 max-w-lg">
+                {t.description}
+              </p>
+              <div className="flex space-x-6">
+                <a href="https://www.facebook.com/yenthuongcat" target="_blank" rel="noopener" className="text-gray-400 hover:text-white transition-colors">
+                  <Facebook size={24} />
+                </a>
+                <a href="https://www.instagram.com/annacanary_vu/" target="_blank" rel="noopener" className="text-gray-400 hover:text-white transition-colors">
+                  <Instagram size={24} />
+                </a>
+                <a href="https://www.linkedin.com/in/anna-vu-travel" target="_blank" rel="noopener" className="text-gray-400 hover:text-white transition-colors">
+                  <Linkedin size={24} />
+                </a>
+              </div>
+            </div>
+
+            {/* Navigation */}
+            <div>
+              <h4 className="text-white font-medium mb-6 uppercase tracking-wider text-sm">Navigation</h4>
+              <ul className="space-y-3">
+                {navigation.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      href={`/${currentLocale}${item.href}`}
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      {currentLocale === "en" ? item.label_en : item.label_vi}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Newsletter */}
+            <div>
+              <h4 className="text-white font-medium mb-6 uppercase tracking-wider text-sm">{t.newsletter}</h4>
+              <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+                {t.newsletterDesc}
+              </p>
+              <div className="flex">
+                <input 
+                  type="email" 
+                  placeholder={currentLocale === "en" ? "Your email address" : "Địa chỉ email của bạn"}
+                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-500"
+                />
+                <button className="px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-r-lg transition-colors">
+                  {currentLocale === "en" ? "Subscribe" : "Đăng ký"}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="border-t border-gray-800 py-8">
+          <div className="max-w-6xl mx-auto px-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 text-sm">
+                © {new Date().getFullYear()} {t.copyright}. {currentLocale === "en" ? "All rights reserved." : "Tất cả quyền được bảo lưu."}
+              </p>
+              <div className="flex space-x-6 mt-4 md:mt-0">
+                {legal.map((item, index) => (
+                  <Link
+                    key={index}
+                    href={`/${currentLocale}${item.href}`}
+                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                  >
+                    {currentLocale === "en" ? item.label_en : item.label_vi}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
 
