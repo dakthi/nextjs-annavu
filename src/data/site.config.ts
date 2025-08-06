@@ -11,7 +11,8 @@ export const siteConfig = {
     jobTitle: "Travel Consultant & Cultural Explorer",
     social: {
       linkedin: "https://www.linkedin.com/in/anna-vu-travel/",
-      facebook: "https://www.facebook.com/annavutravels/",
+      facebook: "https://www.facebook.com/yenthuongcat",
+      instagram: "https://www.instagram.com/annacanary_vu/",
     },
   },
   company: {
