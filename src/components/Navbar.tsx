@@ -11,6 +11,7 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   const currentLocale = pathname?.startsWith("/vi") ? "vi" : "en";
+  const isHomePage = pathname === `/${currentLocale}` || pathname === `/${currentLocale}/`;
   const getCurrentPagePath = () => {
     if (!pathname) return "";
     return pathname.replace(/^\/(en|vi)/, "") || "";
@@ -23,7 +24,7 @@ export const Navbar = () => {
       nav: [
         { label: "Home", href: "" },
         { label: "About", href: "learn" },
-        { label: "Trips", href: "projects" },
+        { label: "Services", href: "services" },
         { label: "Contact", href: "contact" },
       ],
       enquire: "ENQUIRE NOW",
@@ -34,7 +35,7 @@ export const Navbar = () => {
       nav: [
         { label: "Trang chủ", href: "" },
         { label: "Giới thiệu", href: "learn" },
-        { label: "Chuyến đi", href: "projects" },
+        { label: "Dịch vụ", href: "services" },
         { label: "Liên hệ", href: "contact" },
       ],
       enquire: "LIÊN HỆ NGAY",
@@ -69,9 +70,9 @@ export const Navbar = () => {
               key={item.href}
               href={item.href}
               className={`uppercase tracking-wider text-sm font-medium transition-all duration-300 ${
-                scrolled 
-                  ? "text-gray-800 hover:text-black" 
-                  : "text-white hover:opacity-70"
+                isHomePage 
+                  ? "text-white hover:text-gray-200" 
+                  : "text-black hover:text-gray-700"
               }`}
             >
               {item.label}
@@ -86,26 +87,26 @@ export const Navbar = () => {
               href={getLanguageSwitchUrl("en")}
               className={`px-2 py-1 text-xs uppercase transition-all duration-300 ${
                 currentLocale === "en"
-                  ? scrolled ? "text-black font-bold" : "text-white font-bold"
-                  : scrolled ? "text-gray-500 hover:text-black" : "text-white/70 hover:text-white"
+                  ? isHomePage ? "text-white font-bold" : "text-black font-bold"
+                  : isHomePage ? "text-gray-300 hover:text-white" : "text-gray-500 hover:text-black"
               }`}
             >
               EN
             </Link>
-            <span className={scrolled ? "text-gray-300" : "text-white/50"}>|</span>
+            <span className={isHomePage ? "text-gray-400" : "text-gray-300"}>|</span>
             <Link
               href={getLanguageSwitchUrl("vi")}
               className={`px-2 py-1 text-xs uppercase transition-all duration-300 ${
                 currentLocale === "vi"
-                  ? scrolled ? "text-black font-bold" : "text-white font-bold"
-                  : scrolled ? "text-gray-500 hover:text-black" : "text-white/70 hover:text-white"
+                  ? isHomePage ? "text-white font-bold" : "text-black font-bold"
+                  : isHomePage ? "text-gray-300 hover:text-white" : "text-gray-500 hover:text-black"
               }`}
             >
               VI
             </Link>
           </div>
           
-          <button className="bg-green-900 text-white px-6 py-2 rounded font-medium hover:bg-green-600 transition-colors">
+          <button className="bg-emerald-700 text-white px-6 py-2 rounded font-medium hover:bg-emerald-800 transition-colors">
             {t.enquire}
           </button>
         </div>

@@ -11,18 +11,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   const translations = {
     en: {
-      title: "Contact Thi Nguyen - London Consultant",
-      description: "Contact Thi Nguyen for automation consulting, full-stack development, and SME solutions. London-based consultant working with businesses globally.",
-      keywords: ["contact Thi Nguyen", "Thi Nguyen London", "contact", "automation consultant", "full-stack developer", "London consultant", "SME specialist"],
-      ogTitle: "Contact Thi Nguyen - London-based Consultant",
-      ogDescription: "Contact Thi Nguyen for automation consulting, full-stack development, and SME solutions."
+      title: "Contact Anna Vu - London Travel Consultant",
+      description: "Contact Anna Vu for personalized European travel consulting, cultural immersion experiences, and luxury travel planning. London-based travel consultant.",
+      keywords: ["contact Anna Vu", "Anna Vu London", "contact", "travel consultant", "European travel", "London travel consultant", "cultural travel specialist"],
+      ogTitle: "Contact Anna Vu - London Travel Consultant",
+      ogDescription: "Contact Anna Vu for personalized European travel consulting and cultural immersion experiences."
     },
     vi: {
-      title: "Liên hệ Thi Nguyen - Tư vấn viên London",
-      description: "Liên hệ với Thi Nguyen để được tư vấn tự động hóa, phát triển full-stack và các giải pháp cho doanh nghiệp vừa và nhỏ. Tư vấn viên tại London làm việc với các doanh nghiệp toàn cầu.",
-      keywords: ["liên hệ Thi Nguyen", "Thi Nguyen London", "liên hệ", "tư vấn tự động hóa", "lập trình viên full-stack", "tư vấn London", "chuyên gia SME"],
-      ogTitle: "Liên hệ Thi Nguyen - Tư vấn viên London",
-      ogDescription: "Liên hệ với Thi Nguyen để được tư vấn tự động hóa, phát triển full-stack và các giải pháp cho doanh nghiệp."
+      title: "Liên hệ Anna Vu - Tư vấn Du lịch London",
+      description: "Liên hệ với Anna Vu để được tư vấn du lịch châu Âu cá nhân hóa, trải nghiệm hòa nhập văn hóa và lập kế hoạch du lịch sang trọng. Tư vấn viên du lịch tại London.",
+      keywords: ["liên hệ Anna Vu", "Anna Vu London", "liên hệ", "tư vấn du lịch", "du lịch châu Âu", "tư vấn du lịch London", "chuyên gia du lịch văn hóa"],
+      ogTitle: "Liên hệ Anna Vu - Tư vấn Du lịch London",
+      ogDescription: "Liên hệ với Anna Vu để được tư vấn du lịch châu Âu cá nhân hóa và trải nghiệm hòa nhập văn hóa."
     }
   };
 
@@ -33,11 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t.description,
     keywords: t.keywords,
     alternates: {
-      canonical: `https://thielts.com/${locale}/contact`,
+      canonical: `https://annavu.com/${locale}/contact`,
     },
     openGraph: {
       type: "website",
-      url: `https://thielts.com/${locale}/contact`,
+      url: `https://annavu.com/${locale}/contact`,
       title: t.ogTitle,
       description: t.ogDescription,
     },

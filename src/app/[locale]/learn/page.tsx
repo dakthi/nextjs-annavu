@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Container } from "@/components/Container";
 import { LearnHero } from "@/components/learn/LearnHero";
-import { CoursesGrid } from "@/components/learn/CoursesGrid";
+import { TravelServicesGrid } from "@/components/learn/TravelServicesGrid";
 
 type Props = {
   params: { locale: string };
@@ -22,9 +21,7 @@ export default function LearnPage({ params }: Props) {
   return (
     <>
       <LearnHero lang={locale} />
-      <Container className="mb-20">
-        <CoursesGrid filterCategory={filterCategory} locale={locale} />
-      </Container>
+      <TravelServicesGrid filterCategory={filterCategory} locale={locale} />
     </>
   );
 }

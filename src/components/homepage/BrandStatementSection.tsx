@@ -12,7 +12,7 @@ export default function BrandStatementSection({ locale }: HomepageProps) {
             ? "We believe travel is about creating connections that last a lifetime. Every journey we craft is designed to open your heart to new cultures, landscapes, and experiences that transform how you see the world."
             : "Chúng tôi tin rằng du lịch là tạo ra những kết nối kéo dài suốt đời. Mọi hành trình chúng tôi tạo ra đều được thiết kế để mở lòng bạn với những nền văn hóa, cảnh quan và trải nghiệm mới làm thay đổi cách bạn nhìn thế giới."}
         </p>
-        <button className="bg-black text-white px-8 py-3 font-medium hover:bg-gray-800 transition-colors">
+        <button className="bg-emerald-700 text-white px-8 py-3 font-medium hover:bg-emerald-800 transition-colors">
           {locale === "en" ? "GET IN TOUCH" : "LIÊN HỆ"}
         </button>
       </div>

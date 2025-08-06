@@ -14,7 +14,7 @@ export function Footer({ locale }: FooterProps) {
   const navigation = [
     { label_en: "Home", label_vi: "Trang chủ", href: "" },
     { label_en: "About", label_vi: "Giới thiệu", href: "/learn" },
-    { label_en: "Trips", label_vi: "Chuyến đi", href: "/projects" },
+    { label_en: "Services", label_vi: "Dịch vụ", href: "/services" },
     { label_en: "Blog", label_vi: "Blog", href: "/blog" },
     { label_en: "Contact", label_vi: "Liên hệ", href: "/contact" },
   ];
@@ -56,11 +56,11 @@ export function Footer({ locale }: FooterProps) {
   ];
 
   return (
-    <footer className="w-full bg-gray-900 text-white">
+    <footer className="w-full bg-white text-gray-900 border-t border-gray-200">
       {/* Recent Experiences Section */}
       <div className="py-16">
         <div className="max-w-6xl mx-auto px-8">
-          <h3 className="text-2xl font-serif font-semibold text-center mb-12">
+          <h3 className="text-2xl font-serif font-semibold text-black text-center mb-12">
             {t.experiences}
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -73,7 +73,7 @@ export function Footer({ locale }: FooterProps) {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <p className="text-sm text-gray-300 mt-2 text-center">{experience.title}</p>
+                <p className="text-sm text-gray-600 mt-2 text-center">{experience.title}</p>
               </div>
             ))}
           </div>
@@ -81,26 +81,26 @@ export function Footer({ locale }: FooterProps) {
       </div>
 
       {/* Main Footer Content */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-2">
               <Link href={`/${currentLocale}`} className="block mb-6">
-                <h2 className="text-3xl font-serif font-bold mb-2">Anna Vu</h2>
-                <p className="text-gray-400 text-sm uppercase tracking-wider">{t.tagline}</p>
+                <h2 className="text-3xl font-serif font-bold mb-2 text-black">Anna Vu</h2>
+                <p className="text-gray-600 text-sm uppercase tracking-wider">{t.tagline}</p>
               </Link>
-              <p className="text-gray-300 leading-relaxed mb-8 max-w-lg">
+              <p className="text-gray-700 leading-relaxed mb-8 max-w-lg">
                 {t.description}
               </p>
               <div className="flex space-x-6">
-                <a href="https://www.facebook.com/yenthuongcat" target="_blank" rel="noopener" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.facebook.com/yenthuongcat" target="_blank" rel="noopener" className="text-gray-600 hover:text-black transition-colors">
                   <Facebook size={24} />
                 </a>
-                <a href="https://www.instagram.com/annacanary_vu/" target="_blank" rel="noopener" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.instagram.com/annacanary_vu/" target="_blank" rel="noopener" className="text-gray-600 hover:text-black transition-colors">
                   <Instagram size={24} />
                 </a>
-                <a href="https://www.linkedin.com/in/anna-vu-travel" target="_blank" rel="noopener" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/anna-vu-travel" target="_blank" rel="noopener" className="text-gray-600 hover:text-black transition-colors">
                   <Linkedin size={24} />
                 </a>
               </div>
@@ -108,13 +108,13 @@ export function Footer({ locale }: FooterProps) {
 
             {/* Navigation */}
             <div>
-              <h4 className="text-white font-medium mb-6 uppercase tracking-wider text-sm">Navigation</h4>
+              <h4 className="text-black font-serif font-semibold mb-6 uppercase tracking-wider text-sm">Navigation</h4>
               <ul className="space-y-3">
                 {navigation.map((item, index) => (
                   <li key={index}>
                     <Link
                       href={`/${currentLocale}${item.href}`}
-                      className="text-gray-400 hover:text-white transition-colors"
+                      className="text-gray-700 hover:text-black transition-colors"
                     >
                       {currentLocale === "en" ? item.label_en : item.label_vi}
                     </Link>
@@ -125,17 +125,17 @@ export function Footer({ locale }: FooterProps) {
 
             {/* Newsletter */}
             <div>
-              <h4 className="text-white font-medium mb-6 uppercase tracking-wider text-sm">{t.newsletter}</h4>
-              <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+              <h4 className="text-black font-serif font-semibold mb-6 uppercase tracking-wider text-sm">{t.newsletter}</h4>
+              <p className="text-gray-700 mb-6 text-sm leading-relaxed">
                 {t.newsletterDesc}
               </p>
               <div className="flex">
                 <input 
                   type="email" 
                   placeholder={currentLocale === "en" ? "Your email address" : "Địa chỉ email của bạn"}
-                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-500"
+                  className="flex-1 px-4 py-2 bg-gray-100 border border-gray-300 rounded-l-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-emerald-500"
                 />
-                <button className="px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-r-lg transition-colors">
+                <button className="px-6 py-2 bg-emerald-700 hover:bg-emerald-800 text-white rounded-r-lg transition-colors">
                   {currentLocale === "en" ? "Subscribe" : "Đăng ký"}
                 </button>
               </div>
@@ -144,10 +144,10 @@ export function Footer({ locale }: FooterProps) {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-800 py-8">
+        <div className="border-t border-gray-200 py-8">
           <div className="max-w-6xl mx-auto px-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-700 text-sm">
                 © {new Date().getFullYear()} {t.copyright}. {currentLocale === "en" ? "All rights reserved." : "Tất cả quyền được bảo lưu."}
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
@@ -155,7 +155,7 @@ export function Footer({ locale }: FooterProps) {
                   <Link
                     key={index}
                     href={`/${currentLocale}${item.href}`}
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
+                    className="text-gray-700 hover:text-black transition-colors text-sm"
                   >
                     {currentLocale === "en" ? item.label_en : item.label_vi}
                   </Link>

@@ -8,7 +8,7 @@ export default function ExploreTripsSection({ locale }: HomepageProps) {
     <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-8">
         <div className="mb-16">
-          <h2 className="text-5xl font-serif font-bold mb-4">
+          <h2 className="text-5xl font-serif font-bold text-black mb-4">
             {locale === "en" ? "EXPLORE OUR TRIPS" : "KHÁM PHÁ CÁC CHUYẾN ĐI"}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl">
@@ -37,7 +37,7 @@ export default function ExploreTripsSection({ locale }: HomepageProps) {
                   <h3 className="text-white text-2xl font-serif font-semibold mb-4">
                     {trip.title}
                   </h3>
-                  <button className="bg-white text-black px-6 py-2 font-medium hover:bg-gray-100 transition-colors">
+                  <button className="bg-emerald-700 text-white px-6 py-2 font-medium hover:bg-emerald-800 transition-colors">
                     {locale === "en" ? "EXPLORE TRIP" : "KHÁM PHÁ CHUYẾN ĐI"}
                   </button>
                 </div>

@@ -14,18 +14,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   const translations = {
     en: {
-      title: "Thi Nguyen - Learn & Courses",
-      description: "Thi Nguyen's practical courses and learning resources covering web development, business skills, and automation. Knowledge from real-world experience by a London-based full-stack consultant, no fluff.",
-      keywords: ["Thi Nguyen courses", "Thi Nguyen learning", "learning", "courses", "web development", "business skills", "automation", "practical tutorials"],
-      ogTitle: "Thi Nguyen - Learn & Practical Courses",
-      ogDescription: "Thi Nguyen's practical courses and learning resources covering web development, business skills, and automation."
+      title: "Anna Vu - Travel Insights & Services",
+      description: "Anna Vu's travel services and European insights from years of authentic exploration. From free consultations to personalized itineraries and personal guide services in Europe.",
+      keywords: ["Anna Vu travel", "Anna Vu services", "European travel", "travel consultation", "travel planning", "personal guide", "visa support", "London travel consultant"],
+      ogTitle: "Anna Vu - Travel Insights & Services",
+      ogDescription: "Anna Vu's travel services and European insights from years of authentic exploration."
     },
     vi: {
-      title: "Thi Nguyen - Học tập & Khóa học",
-      description: "Các khóa học thực tế và tài liệu học tập của Thi Nguyen về phát triển web, kỹ năng kinh doanh và tự động hóa. Kiến thức từ kinh nghiệm thực tế của tư vấn viên full-stack tại London, không rườm rà.",
-      keywords: ["Thi Nguyen khóa học", "Thi Nguyen học tập", "học tập", "khóa học", "phát triển web", "kỹ năng kinh doanh", "tự động hóa", "hướng dẫn thực tế"],
-      ogTitle: "Thi Nguyen - Học tập & Khóa học thực tế",
-      ogDescription: "Các khóa học thực tế và tài liệu học tập của Thi Nguyen về phát triển web, kỹ năng kinh doanh và tự động hóa."
+      title: "Anna Vu - Hiểu biết Du lịch & Dịch vụ",
+      description: "Dịch vụ du lịch và hiểu biết châu Âu của Anna Vu từ nhiều năm khám phá chân thực. Từ tư vấn miễn phí đến lịch trình cá nhân hóa và dịch vụ hướng dẫn cá nhân ở châu Âu.",
+      keywords: ["Anna Vu du lịch", "Anna Vu dịch vụ", "du lịch châu Âu", "tư vấn du lịch", "lập kế hoạch du lịch", "hướng dẫn cá nhân", "hỗ trợ visa", "tư vấn du lịch London"],
+      ogTitle: "Anna Vu - Hiểu biết Du lịch & Dịch vụ",
+      ogDescription: "Dịch vụ du lịch và hiểu biết châu Âu của Anna Vu từ nhiều năm khám phá chân thực."
     }
   };
 
@@ -36,11 +36,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t.description,
     keywords: t.keywords,
     alternates: {
-      canonical: `https://thielts.com/${locale}/learn`,
+      canonical: `https://annavu.com/${locale}/learn`,
     },
     openGraph: {
       type: "website",
-      url: `https://thielts.com/${locale}/learn`,
+      url: `https://annavu.com/${locale}/learn`,
       title: t.ogTitle,
       description: t.ogDescription,
     },

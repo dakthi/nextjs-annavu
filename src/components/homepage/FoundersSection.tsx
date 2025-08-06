@@ -21,7 +21,7 @@ export default function FoundersSection({ locale }: HomepageProps) {
                   : "Cách tiếp cận của chúng tôi kết hợp kiến thức địa phương sâu sắc với dịch vụ sang trọng, đảm bảo rằng mọi chi tiết trong cuộc phiêu lưu của bạn đều phản ánh sự chân thực và xuất sắc."}
               </p>
             </div>
-            <button className="bg-black text-white px-8 py-3 font-medium hover:bg-gray-800 transition-colors">
+            <button className="bg-emerald-700 text-white px-8 py-3 font-medium hover:bg-emerald-800 transition-colors">
               {locale === "en" ? "WATCH THE FILM" : "XEM PHIM"}
             </button>
           </div>

@@ -14,74 +14,76 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
 
   const translations = {
     en: {
-      tag: "get in touch",
-      heading: "let's have a chat",
+      tag: "let's plan your journey",
+      heading: "ready for your next adventure?",
       description:
-        "got a project in mind? curious about automation? just want to say hello? drop me a line.",
-      contactTitle: "ways to reach me",
+        "dream destination in mind? curious about european culture? ready to plan something amazing? let's chat.",
+      contactTitle: "ways to reach anna",
       email: "email",
       location: "location",
       locationValue: "london, uk",
       responseTitle: "typical response time",
       responseText:
-        "i usually respond within 24 hours, often much faster. if it's urgent, mention it in the subject line.",
-      quote: `"the best conversations start with hello"`,
+        "i usually respond within 24 hours, often much faster. for urgent travel needs, mention it in the subject line.",
+      quote: `"every great journey begins with a single conversation"`,
       name: "name *",
       namePlaceholder: "your name",
       emailLabel: "email *",
       emailPlaceholder: "your@email.com",
-      company: "company",
-      companyPlaceholder: "your company (optional)",
+      company: "travel type",
+      companyPlaceholder: "solo, couple, family, friends (optional)",
       budget: "budget range",
       budgetOptions: [
         "select range (optional)",
-        "under £1,000",
-        "£1,000 - £5,000",
+        "under £500",
+        "£500 - £2,000",
+        "£2,000 - £5,000",
         "£5,000 - £10,000",
         "£10,000+",
-        "not sure yet",
+        "flexible/open to suggestions",
       ],
       subject: "subject *",
-      subjectPlaceholder: "what's this about?",
+      subjectPlaceholder: "what kind of adventure are you planning?",
       message: "message *",
       messagePlaceholder:
-        "tell me about your project, question, or just say hello...",
-      send: "send message",
+        "tell me about your dream trip, travel style, or questions you have...",
+      send: "start planning",
       sending: "sending...",
     },
     vi: {
-      tag: "liên hệ",
-      heading: "cùng trò chuyện nhé",
+      tag: "cùng lập kế hoạch hành trình",
+      heading: "sẵn sàng cho cuộc phiêu lưu tiếp theo?",
       description:
-        "có dự án trong đầu? tò mò về tự động hoá? hay chỉ muốn chào hỏi? cứ để lại lời nhắn.",
-      contactTitle: "cách liên hệ với thi",
+        "có điểm đến mơ ước? tò mò về văn hóa châu âu? sẵn sàng lập kế hoạch điều tuyệt vời? cùng trò chuyện nhé.",
+      contactTitle: "cách liên hệ với anna",
       email: "email",
       location: "địa điểm",
       locationValue: "london, anh quốc",
       responseTitle: "thời gian phản hồi",
       responseText:
-        "thi thường trả lời trong 24 giờ, thường là nhanh hơn. nếu gấp, ghi rõ trong tiêu đề nhé.",
-      quote: `"những cuộc trò chuyện hay nhất bắt đầu bằng lời chào"`,
+        "anna thường trả lời trong 24 giờ, thường là nhanh hơn. cho nhu cầu du lịch khẩn cấp, ghi rõ trong tiêu đề nhé.",
+      quote: `"mọi hành trình tuyệt vời đều bắt đầu bằng một cuộc trò chuyện"`,
       name: "tên *",
       namePlaceholder: "tên của bạn",
       emailLabel: "email *",
       emailPlaceholder: "ban@email.com",
-      company: "công ty",
-      companyPlaceholder: "công ty của bạn (không bắt buộc)",
+      company: "loại du lịch",
+      companyPlaceholder: "một mình, đôi, gia đình, bạn bè (không bắt buộc)",
       budget: "ngân sách dự kiến",
       budgetOptions: [
         "chọn khoảng (không bắt buộc)",
-        "dưới £1,000",
-        "£1,000 - £5,000",
+        "dưới £500",
+        "£500 - £2,000",
+        "£2,000 - £5,000",
         "£5,000 - £10,000",
         "£10,000+",
-        "chưa chắc",
+        "linh hoạt/mở cho gợi ý",
       ],
       subject: "tiêu đề *",
-      subjectPlaceholder: "chủ đề của lời nhắn?",
+      subjectPlaceholder: "bạn đang lập kế hoạch loại cuộc phiêu lưu nào?",
       message: "lời nhắn *",
-      messagePlaceholder: "kể cho thi về dự án hoặc câu hỏi của bạn...",
-      send: "gửi lời nhắn",
+      messagePlaceholder: "kể cho anna về chuyến đi mơ ước, phong cách du lịch hoặc câu hỏi của bạn...",
+      send: "bắt đầu lập kế hoạch",
       sending: "đang gửi...",
     },
   };
@@ -129,42 +131,42 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
   };
 
   return (
-    <section className="w-full bg-gradient-to-br from-white to-gray-50 dark:from-neutral-900 dark:to-neutral-800">
-      <Container className="flex flex-wrap items-center pt-8 md:pt-16">
-        <div className="w-full">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <div className="inline-block bg-gray-100 dark:bg-neutral-700 text-gray-600 dark:text-gray-300 text-sm px-3 py-1 rounded-full mb-4">
-              {t.tag}
-            </div>
-            <h1 className="text-3xl lg:text-4xl font-light text-gray-800 dark:text-gray-100 mb-6 leading-relaxed">
-              {t.heading}
-            </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              {t.description}
-            </p>
+    <section className="py-24 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-8">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="inline-block bg-white text-gray-600 text-sm px-4 py-2 rounded-full mb-6 shadow-sm">
+            {t.tag}
           </div>
+          <h1 className="text-3xl md:text-5xl font-serif font-bold text-black mb-6 leading-tight">
+            {t.heading}
+          </h1>
+          <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
+            {t.description}
+          </p>
+        </div>
 
-          <div className="flex flex-col lg:flex-row gap-12">
-            {/* Left Column - Contact Info */}
-            <div className="lg:w-1/3 lg:sticky lg:top-8 lg:self-start">
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Left Column - Contact Info */}
+          <div className="lg:w-1/3">
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-3">
+                  <h3 className="text-lg font-serif font-semibold text-black mb-4">
                     {t.contactTitle}
                   </h3>
-                  <div className="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                  <div className="space-y-4 text-gray-700">
                     <div>
-                      <span className="font-medium">{t.email}:</span>
+                      <span className="font-medium text-black">{t.email}:</span>
                       <br />
                       <a
                         href="mailto:dakthi9@gmail.com"
-                        className="hover:text-gray-900 dark:hover:text-white"
+                        className="hover:text-gray-900 transition-colors"
                       >
                         dakthi9@gmail.com
                       </a>
                     </div>
                     <div>
-                      <span className="font-medium">{t.location}:</span>
+                      <span className="font-medium text-black">{t.location}:</span>
                       <br />
                       {t.locationValue}
                     </div>
@@ -172,28 +174,30 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-medium text-gray-900 dark:text-gray-100 mb-3">
+                  <h3 className="text-lg font-serif font-semibold text-black mb-4">
                     {t.responseTitle}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed">
                     {t.responseText}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-                  <p className="text-gray-500 dark:text-gray-400 text-xs italic">
+                <div className="pt-6 border-t border-gray-200">
+                  <p className="text-gray-600 italic font-serif">
                     {t.quote}
                   </p>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Right Column - Contact Form */}
-            <div className="lg:w-2/3">
+          {/* Right Column - Contact Form */}
+          <div className="lg:w-2/3">
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-black mb-2">
                       {t.name}
                     </label>
                     <input
@@ -204,12 +208,12 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder={t.namePlaceholder}
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-sm focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 focus:border-gray-400 dark:focus:border-gray-500 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-gray-400 bg-white text-gray-900 transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-black mb-2">
                       {t.emailLabel}
                     </label>
                     <input
@@ -220,14 +224,14 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder={t.emailPlaceholder}
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-sm focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 focus:border-gray-400 dark:focus:border-gray-500 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-gray-400 bg-white text-gray-900 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
+                    <label htmlFor="company" className="block text-sm font-medium text-black mb-2">
                       {t.company}
                     </label>
                     <input
@@ -237,12 +241,12 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                       value={formData.company}
                       onChange={handleChange}
                       placeholder={t.companyPlaceholder}
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-sm focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 focus:border-gray-400 dark:focus:border-gray-500 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-gray-400 bg-white text-gray-900 transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="budget" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
+                    <label htmlFor="budget" className="block text-sm font-medium text-black mb-2">
                       {t.budget}
                     </label>
                     <select
@@ -250,7 +254,7 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-sm focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 focus:border-gray-400 dark:focus:border-gray-500 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-gray-400 bg-white text-gray-900 transition-colors"
                     >
                       {t.budgetOptions.map((option, index) => (
                         <option key={index} value={option.toLowerCase()}>
@@ -262,7 +266,7 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-black mb-2">
                     {t.subject}
                   </label>
                   <input
@@ -273,12 +277,12 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                     value={formData.subject}
                     onChange={handleChange}
                     placeholder={t.subjectPlaceholder}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-sm focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 focus:border-gray-400 dark:focus:border-gray-500 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-gray-400 bg-white text-gray-900 transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-black mb-2">
                     {t.message}
                   </label>
                   <textarea
@@ -289,7 +293,7 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder={t.messagePlaceholder}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-sm focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 focus:border-gray-400 dark:focus:border-gray-500 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 transition-colors resize-vertical"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-gray-200 focus:border-gray-400 bg-white text-gray-900 transition-colors resize-vertical"
                   />
                 </div>
 
@@ -297,7 +301,7 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full px-8 py-3 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded-sm hover:bg-gray-800 dark:hover:bg-gray-200 focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 focus:ring-offset-2 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full px-8 py-3 bg-emerald-700 text-white hover:bg-emerald-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
                   >
                     {isSubmitting ? t.sending : t.send}
                   </button>
@@ -306,7 +310,7 @@ export function ContactForm({ locale: propLocale }: ContactFormProps = {}) {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }
