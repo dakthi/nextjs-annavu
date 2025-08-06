@@ -24,7 +24,7 @@ export interface BenefitSection {
 export const benefitOne: BenefitSection = {
   title: "European Adventure Specialist",
   desc: "Living in London and exploring Europe regularly, Anna has developed a deep understanding of European culture, hidden gems, and travel logistics. Her passion for discovery and cultural exploration makes her the perfect guide for your next adventure.",
-  image: "/img/anna-travel.jpg",
+  image: "/img/anna-10.jpg",
   bullets: [
     {
       title: "Regular European Explorer",
@@ -47,7 +47,7 @@ export const benefitOne: BenefitSection = {
 export const benefitTwo: BenefitSection = {
   title: "Personalized Travel Consulting Services",
   desc: "Anna doesn't just suggest destinations - she crafts personalized travel experiences that match your interests, budget, and travel style. Her curious nature and love for sharing discoveries make her the ideal travel companion.",
-  image: "/img/anna-consulting.jpg",
+  image: "/img/anna-11.jpg",
   bullets: [
     {
       title: "Curious Explorer Mindset",

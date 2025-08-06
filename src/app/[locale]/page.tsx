@@ -76,17 +76,21 @@ export default function HomePage({ params }: Props) {
       "Hello! I'm Anna, a travel consultant living and working in London, UK 🇬🇧. Every month or two, I embark on new European adventures, discovering hidden gems and authentic cultural experiences.",
     description:
       "My passion for travel was sparked by my first major trip to South Korea, where I was amazed by how modern and different it was from Vietnam. That experience opened my eyes to the incredible diversity of cultures and experiences waiting to be discovered around the world.",
+    journey:
+      "What led me to travel consulting wasn't a coincidence—it was a deliberate choice. When I joined travel groups and communities, I saw so many people with the same passion for travel as me, but they had countless questions. Often, when they asked in groups, they'd get brief answers, or the knowledgeable members wouldn't respond at all. I saw myself in those travelers—I remembered how difficult it was to find scattered information and piece together travel plans.",
+    inspiration:
+      "An inspiring woman in her 30s encouraged me to start writing and sharing my experiences. I began with visa application guides from the UK, and the response was incredible! My posts reached so many people, and I received countless messages with questions. I realized I could help others avoid the struggles I went through.",
     mission:
-      "I believe travel is about freedom, curiosity, and discovery. My mission is to help others experience that same sense of wonder and liberation I feel when exploring new places. Whether you're seeking cultural immersion, hidden local gems, or simply the joy of discovering something new, I'm here to guide your journey.",
+      "I believe travel is about freedom, curiosity, and discovery. My mission is to help others experience that same sense of wonder and liberation I feel when exploring new places. I love sharing what I know to help those who don't know—it's that simple. This work brings me joy because I'm naturally someone who enjoys helping others through knowledge sharing.",
     gratitude:
       "Thank you for following along on my adventures ❤️. I'm grateful for the opportunity to connect, share, and inspire others to explore with curiosity and freedom. If you have any questions about European travel or destinations you'd like to explore, don't hesitate to reach out!",
     wishes: "Here's to a year filled with amazing adventures, cultural discoveries, and unforgettable journeys!",
     articles: [
-      { title: "My First European Adventure: From London to Paris by Train", url: "/blog/first-european-adventure" },
-      { title: "Hidden Gems in Eastern Europe: 5 Countries You Haven't Considered", url: "/blog/hidden-gems-eastern-europe" },
-      { title: "Korean Culture Shock: What South Korea Taught Me About Travel", url: "/blog/korean-cultural-discovery" },
-      { title: "Budget European Travel: How to Explore 3 Countries for Under £500", url: "/blog/budget-european-travel" },
-      { title: "The Art of Slow Travel: Why I Spend 2-3 Days Minimum in Each City", url: "/blog/slow-travel-philosophy" },
+      { title: "Why I Became a Travel Consultant: From Traveler to Guide", url: "/blog/becoming-travel-consultant" },
+      { title: "Korean Culture Shock: The Trip That Changed My Perspective", url: "/blog/korean-cultural-discovery" },
+      { title: "UK Visa Applications: Complete Guide for European Travel", url: "/blog/uk-visa-applications-guide" },
+      { title: "From Travel Groups to Professional Consulting: My Journey", url: "/blog/travel-groups-to-consulting" },
+      { title: "Why I Started Writing Travel Guides: Helping Others Navigate", url: "/blog/why-travel-writing" },
       { title: "European Train Travel: The Ultimate Guide to Eurail Passes", url: "/blog/european-train-travel-guide" },
       { title: "Cultural Immersion: How to Connect with Locals While Traveling", url: "/blog/cultural-immersion-guide" },
       { title: "Solo Female Travel in Europe: Safety Tips and Confidence Building", url: "/blog/solo-female-travel-europe" },
@@ -117,7 +121,7 @@ export default function HomePage({ params }: Props) {
           <div className="relative bg-white dark:bg-neutral-800 rounded-2xl shadow-2xl p-8 transform rotate-1 hover:rotate-0 transition-transform">
             <div className="flex flex-col items-center space-y-4">
               <img
-                src="/img/anna-profile.jpg"
+                src="/img/anna-1.jpg"
                 alt="Anna Vu"
                 className="w-36 h-36 rounded-full object-cover shadow-lg border-4 border-blue-200"
               />
@@ -133,8 +137,8 @@ export default function HomePage({ params }: Props) {
               {[2, 3, 4, 5, 6].map((num, i) => (
                 <img
                   key={i}
-                  src={`/img/anna-travel-${num}.jpg`}
-                  alt={`Anna Vu travel photo ${num}`}
+                  src={`/img/anna-${num}.jpg`}
+                  alt={`Anna Vu photo ${num}`}
                   className="w-full h-20 object-cover rounded-lg shadow-md transform hover:rotate-3 hover:scale-105 transition-transform duration-300"
                 />
               ))}
@@ -145,7 +149,7 @@ export default function HomePage({ params }: Props) {
           <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl p-6 transform -rotate-1 hover:rotate-0 transition-transform">
             <div className="flex flex-col gap-6">
               <img
-                src="/img/anna-travel-main.jpg"
+                src="/img/anna-7.jpg"
                 alt="Anna Vu exploring Europe"
                 className="rounded-xl object-cover shadow-lg border border-blue-200"
               />
@@ -155,6 +159,8 @@ export default function HomePage({ params }: Props) {
                 </h2>
                 <p>{profileData.introduction}</p>
                 <p>{profileData.description}</p>
+                <p>{profileData.journey}</p>
+                <p>{profileData.inspiration}</p>
                 <p>{profileData.mission}</p>
                 <p>{profileData.gratitude}</p>
                 <p className="font-semibold text-blue-600">{profileData.wishes}</p>
@@ -166,12 +172,12 @@ export default function HomePage({ params }: Props) {
         {/* Polaroid Style Feature */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <img
-            src="/img/anna-europe-1.jpg"
+            src="/img/anna-8.jpg"
             alt="Anna Vu in European city"
             className="rounded-2xl shadow-xl transform rotate-2 hover:rotate-0 transition-transform"
           />
           <img
-            src="/img/anna-europe-2.jpg"
+            src="/img/anna-9.jpg"
             alt="Anna Vu cultural exploration"
             className="rounded-2xl shadow-xl transform -rotate-2 hover:rotate-0 transition-transform"
           />

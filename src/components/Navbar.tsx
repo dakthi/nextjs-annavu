@@ -81,7 +81,7 @@ export const Navbar = () => {
               className="flex items-center space-x-3"
             >
               <img
-                src="/img/anna-profile.jpg"
+                src="/img/anna-1.jpg"
                 alt="Anna Vu"
                 className={`rounded-full transition-all duration-300 ${
                   scrolled ? "w-10 h-10" : "w-12 h-12"

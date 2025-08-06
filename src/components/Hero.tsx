@@ -43,7 +43,7 @@ export const Hero = ({ locale = "en" }: HeroProps) => {
           <div className="relative w-full h-64 lg:h-full flex items-stretch">
             <div className="w-full h-full rounded-xl shadow-xl shadow-black/30 dark:shadow-black/50 border border-gray-200 dark:border-gray-700 overflow-hidden">
               <Image
-                src="/img/hero.png"
+                src="/img/anna-3.jpg"
                 alt="hero illustration"
                 fill
                 className="object-cover"
